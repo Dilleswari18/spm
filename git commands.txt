@@ -1,0 +1,88 @@
+
+Dell@DESKTOP-2FJOVT4 MINGW64 ~/Desktop/GIT (master)
+$ pwd
+/c/Users/Dell/Desktop/GIT
+
+Dell@DESKTOP-2FJOVT4 MINGW64 ~/Desktop/GIT (master)
+$ cd..
+bash: cd..: command not found
+
+Dell@DESKTOP-2FJOVT4 MINGW64 ~/Desktop/GIT (master)
+$ cd "c:"
+
+Dell@DESKTOP-2FJOVT4 MINGW64 /c (master)
+$ pwd
+/c
+
+Dell@DESKTOP-2FJOVT4 MINGW64 /c (master)
+$ ls
+'$Recycle.Bin'/             Intel/                  Recovery/
+'$WINDOWS.~BT'/             KMPlayer/              'System Volume Information'/
+'$WinREAgent'/              OneDriveTemp/           Users/
+ Config.Msi/                PerfLogs/               Windows/
+'Documents and Settings'@  'Program Files'/         hiberfil.sys
+ DumpStack.log.tmp         'Program Files (x86)'/   pagefile.sys
+ Gitbash/                   ProgramData/            swapfile.sys
+
+Dell@DESKTOP-2FJOVT4 MINGW64 /c (master)
+$ cd "C:\Gitbash"
+
+Dell@DESKTOP-2FJOVT4 MINGW64 /c/Gitbash (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Dell/Desktop/GIT/.git/
+
+Dell@DESKTOP-2FJOVT4 MINGW64 /c/Gitbash (master)
+$ git remote add origin https://github.com/Dilleswari18/spm.git
+
+Dell@DESKTOP-2FJOVT4 MINGW64 /c/Gitbash (master)
+$ git remote -v
+origin  https://github.com/Dilleswari18/spm.git (fetch)
+origin  https://github.com/Dilleswari18/spm.git (push)
+
+Dell@DESKTOP-2FJOVT4 MINGW64 /c/Gitbash (master)
+$ git add .
+
+Dell@DESKTOP-2FJOVT4 MINGW64 /c/Gitbash (master)
+$ git commit -m"first"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Dell@DESKTOP-2FJOVT4.(none)')
+
+Dell@DESKTOP-2FJOVT4 MINGW64 /c/Gitbash (master)
+$ git config --global user.email "dilleswarisuvada@gmail.com"
+
+Dell@DESKTOP-2FJOVT4 MINGW64 /c/Gitbash (master)
+$ git config --global user.name "Dilleswari18"
+
+Dell@DESKTOP-2FJOVT4 MINGW64 /c/Gitbash (master)
+$ git commit -m"first"
+[master (root-commit) 7d991c8] first
+ 1 file changed, 31 insertions(+)
+ create mode 100644 prime.c
+
+Dell@DESKTOP-2FJOVT4 MINGW64 /c/Gitbash (master)
+$ git push origin master
+
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 490 bytes | 32.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Dilleswari18/spm/pull/new/master
+remote:
+To https://github.com/Dilleswari18/spm.git
+ * [new branch]      master -> master
+
